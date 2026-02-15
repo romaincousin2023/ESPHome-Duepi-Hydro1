@@ -14,5 +14,5 @@ switch:
           condition:
             lambda: 'return (id(uart_send) == 0);'
           timeout: 100ms
-      - lambda: id(debug).publish_state("Reset pellet stove s6ful");
+      - lambda: id(debug).publish_state("Reset OK Poele");
       - switch.turn_off: reset_sw
