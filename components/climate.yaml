@@ -1,4 +1,4 @@
-climate:
+urclimate:
   - platform: thermostat
     on_boot_restore_from: memory
     name: "Pellet kachel"
