@@ -23,9 +23,9 @@ climate:
               std::string str;
               int temp;
               temp=id(Stove).target_temperature;
-              if (temp<10 || temp>35) {
-                id(debug).publish_state("Temperature out of range (10-35). Set  to 21");
-                temp=21;
+              if (temp<50 || temp>80) {
+                id(debug).publish_state("Temperature out of range (50-80). Set  to 60");
+                temp=60;
               } 
               str=str_sprintf("%X", temp);
               if (str.length()==1) {
